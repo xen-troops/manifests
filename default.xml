@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="github" fetch="ssh://git@github.com" />
+    <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
 
     <default remote="github" sync-j="10" sync-c="true" />
 
     <project name="xen-troops/meta-demo" path="meta-demo" revision="2017" upstream="2017" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="jethro" revision="40376446904ae3529be41737fed9a0b650ed167d" />
 </manifest>
