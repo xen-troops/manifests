@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote name="github" fetch="ssh://git@github.com" />
+
+    <default remote="github" sync-j="10" sync-c="true" />
+
+    <project name="xen-troops/meta-demo" path="meta-demo" revision="2017" upstream="2017" />
 </manifest>
