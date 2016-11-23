@@ -11,6 +11,7 @@
     <project name="CogentEmbedded/meta-rcar" path="meta-renesas" revision="v2.12.0" upstream="v2.12.0" />
     <project remote="yoctoproject" name="poky" path="poky" upstream="jethro" revision="40376446904ae3529be41737fed9a0b650ed167d" />
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="jethro" revision="jethro" />
+    <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="krogoth" revision="krogoth" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="jethro" revision="8ab04afbffb4bc5184cfe0655049de6f44269990" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="jethro" revision="9b1fd178309544dff1f7453e796a9437125bc0d9" />
 </manifest>
