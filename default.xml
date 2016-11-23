@@ -3,10 +3,12 @@
     <remote name="github" fetch="ssh://git@github.com" />
     <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
     <remote name="openembedded" fetch="git://git.openembedded.org" />
+    <remote name="linaro" fetch="git://git.linaro.org" />
 
     <default remote="github" sync-j="10" sync-c="true" />
 
     <project name="xen-troops/meta-demo" path="meta-demo" revision="2017" upstream="2017" />
     <project remote="yoctoproject" name="poky" path="poky" upstream="jethro" revision="40376446904ae3529be41737fed9a0b650ed167d" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="jethro" revision="8ab04afbffb4bc5184cfe0655049de6f44269990" />
+    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="jethro" revision="9b1fd178309544dff1f7453e796a9437125bc0d9" />
 </manifest>
