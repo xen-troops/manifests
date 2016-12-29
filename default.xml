@@ -14,4 +14,5 @@
     <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="krogoth" revision="krogoth" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="jethro" revision="8ab04afbffb4bc5184cfe0655049de6f44269990" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="jethro" revision="9b1fd178309544dff1f7453e796a9437125bc0d9" />
+    <project remote="github" name="meta-qt5/meta-qt5" path="meta-qt5" upstream="master" revision="c0ba8ab590ba4e17a2a04925cf48915233d4f493" />
 </manifest>
