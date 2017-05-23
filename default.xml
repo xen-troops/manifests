@@ -4,6 +4,7 @@
     <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
     <remote name="openembedded" fetch="git://git.openembedded.org" />
     <remote name="linaro" fetch="git://git.linaro.org" />
+    <remote name="epam" fetch="ssh://git@git.epam.com" />
 
     <default remote="github" sync-j="10" sync-c="true" />
 
@@ -14,4 +15,5 @@
     <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="krogoth" revision="krogoth" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="krogoth" revision="55c8a76da5dc099a7bc3838495c672140cedb78e" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="krogoth" revision="2f51d38048599d9878f149d6d15539fb97603f8f" />
+    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
 </manifest>
