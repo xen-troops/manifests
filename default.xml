@@ -8,7 +8,6 @@
 
     <default remote="github" sync-j="10" sync-c="true" />
 
-    <project name="xen-troops/meta-demo" path="meta-demo" upstream="vgpu-dev" revision="vgpu-dev" />
     <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="krogoth" revision="95cb48ba09bc7e55fd549817e3e26723409e68d5" />
     <project remote="yoctoproject" name="poky" path="poky" upstream="krogoth" revision="cca8dd15c8096626052f6d8d25ff1e9a606104a3" />
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="jethro" revision="jethro" />
