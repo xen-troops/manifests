@@ -5,7 +5,7 @@
         review="https://android-review.googlesource.com/" />
 
   <remote  name="epam"
-        fetch="ssh://git@git.epam.com/epmd-aepr/"
+        fetch="ssh://git@gitpct.epam.com/epmd-aepr/"
         revision="master" />
 
   <default revision="refs/tags/android-8.0.0_r4"
