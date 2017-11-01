@@ -6,15 +6,15 @@
 
   <remote  name="epam"
         fetch="ssh://git@gitpct.epam.com/epmd-aepr/"
-        revision="master" />
+        revision="android-bsp-v1.2.0" />
 
   <default revision="refs/tags/android-8.0.0_r4"
            remote="aosp"
            sync-j="4" />
 
   <!-- REL BSP projects -->
-  <project path="device/renesas/salvator" name="android_device_renesas_salvator" group="rel" remote="epam" revision="android-bsp-v0.2.2-ces2018" />
-  <project path="device/renesas/kernel" name="android_device_renesas_kernel" group="rel" remote="epam" revision="android-bsp-v0.2.2-ces2018" />
+  <project path="device/renesas/salvator" name="android_device_renesas_salvator" group="rel" remote="epam" revision="android-bsp-v1.2.0-ces2018" />
+  <project path="device/renesas/kernel" name="android_device_renesas_kernel" group="rel" remote="epam" revision="android-bsp-v1.2.0-ces2018" />
   <project path="device/renesas/bootloaders/u-boot" name="android_device_renesas_bootloaders_u-boot" group="rel" remote="epam" />
   <project path="device/renesas/bootloaders/ipl" name="android_device_renesas_bootloaders_ipl" group="rel" remote="epam" />
   <project path="device/renesas/bootloaders/optee" name="android_device_renesas_bootloaders_optee" group="rel" remote="epam" />
