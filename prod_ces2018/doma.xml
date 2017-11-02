@@ -32,6 +32,8 @@
   <project path="hardware/renesas/qos" name="android_hardware_renesas_qos" group="rel" remote="epam" />
   <project path="hardware/renesas/qos_km" name="android_hardware_renesas_qos_km" group="rel" remote="epam" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-5.2" name="android_prebuilds_gcc_linuxx86_aarch64" group="rel" remote="epam" />
+  <project path="vendor/imagination/clang" name="android_vendor_imagination_clang" group="rel" remote="epam" />
+  <project path="vendor/imagination/llvm" name="android_vendor_imagination_llvm" group="rel" remote="epam" />
 
   <!-- AOSP projects with changes -->
   <project path="external/avb" name="android_external_avb" groups="pdk,rel" remote="epam" />
