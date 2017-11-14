@@ -34,6 +34,9 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-5.2" name="android_prebuilds_gcc_linuxx86_aarch64" group="rel" remote="epam" />
   <project path="vendor/imagination/clang" name="android_vendor_imagination_clang" group="rel" remote="epam" />
   <project path="vendor/imagination/llvm" name="android_vendor_imagination_llvm" group="rel" remote="epam" />
+  <project path="vendor/imagination/rogue_um" name="pvr_um_vgpu_img" group="rel" remote="epam" revision="1.9/ED4813199-ces2018-android" />
+  <project path="vendor/imagination/rogue_km" name="pvr_km_vgpu_img" group="rel" remote="epam" revision="1.9/ED4813199-ces2018-android" />
+  <project path="prebuilts/imagination/metag/2.8" name="android_meta_embedded_toolkit" group="rel" remote="epam" revision="master" />
 
   <!-- AOSP projects with changes -->
   <project path="external/avb" name="android_external_avb" groups="pdk,rel" remote="epam" />
