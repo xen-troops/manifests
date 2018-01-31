@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="git://github.com" />
+    <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
+    <remote name="openembedded" fetch="git://git.openembedded.org" />
+    <remote name="linaro" fetch="git://git.linaro.org" />
+    <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
+
+    <default remote="github" sync-j="10" sync-c="true" />
+
+    <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="krogoth" revision="95cb48ba09bc7e55fd549817e3e26723409e68d5" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="krogoth" revision="cca8dd15c8096626052f6d8d25ff1e9a606104a3" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="krogoth" revision="55c8a76da5dc099a7bc3838495c672140cedb78e" />
+    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="krogoth" revision="2f51d38048599d9878f149d6d15539fb97603f8f" />
+    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
+</manifest>
