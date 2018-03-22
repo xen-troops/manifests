@@ -14,5 +14,4 @@
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="morty" revision="morty" />
     <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="krogoth" revision="krogoth" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="krogoth" revision="2f51d38048599d9878f149d6d15539fb97603f8f" />
-    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
 </manifest>
