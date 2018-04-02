@@ -4,11 +4,11 @@
     <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
     <remote name="openembedded" fetch="git://git.openembedded.org" />
     <remote name="linaro" fetch="git://git.linaro.org" />
+    <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
 
     <default remote="github" sync-j="10" sync-c="true" />
 
     <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="rocko" revision="rocko" />
     <project remote="yoctoproject" name="poky" path="poky" upstream="rocko" revision="342fbd6a3e57021c8e28b124b3adb241936f3d9d" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="rocko" revision="dacfa2b1920e285531bec55cd2f08743390aaf57" />
-    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="rocko" revision="75dfb67bbb14a70cd47afda9726e2e1c76731885" />
 </manifest>
