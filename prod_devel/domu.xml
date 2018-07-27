@@ -8,7 +8,7 @@
 
     <default remote="github" sync-j="10" sync-c="true" />
 
-    <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="rocko" revision="d50e055494cea5de0a348c15ee27cb67a3542e0b" />
+    <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="rocko" revision="fd078b6ece537d986852cb827bd21e022a797b2f" />
     <project remote="yoctoproject" name="poky" path="poky" upstream="rocko" revision="342fbd6a3e57021c8e28b124b3adb241936f3d9d" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="rocko" revision="dacfa2b1920e285531bec55cd2f08743390aaf57" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="rocko" revision="75dfb67bbb14a70cd47afda9726e2e1c76731885" />
