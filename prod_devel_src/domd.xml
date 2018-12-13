@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <include name="prod_devel/domd.xml"/>
+
+    <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
+    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
+</manifest>
