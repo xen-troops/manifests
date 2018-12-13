@@ -12,4 +12,5 @@
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="rocko" revision="dacfa2b1920e285531bec55cd2f08743390aaf57" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="rocko" revision="75dfb67bbb14a70cd47afda9726e2e1c76731885" />
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="morty" revision="morty" />
+    <project name="kraj/meta-clang" path="kraj/meta-clang" upstream="rocko" revision="rocko" />
 </manifest>
