@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="git://github.com" />
+    <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
+
+    <default remote="github" sync-j="10" sync-c="true" />
+
+    <project name="xen-troops/meta-litmusrt" path="meta-litmusrt" upstream="master" revision="master" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="pyro" revision="pyro" />
+</manifest>
