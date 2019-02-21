@@ -34,4 +34,5 @@
   <project name="phongt/meta-sdl" path="meta-sdl" remote="github" revision="60c9fe8a4a9c6ca95f222685f8d6248f16236f2a" upstream="release/4.4.0"/>
   <project name="poky" remote="yocto" revision="05711ba18587aaaf4a9c465a1dd4537f27ceda93" upstream="rocko"/>
   <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
+  <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
 </manifest>
