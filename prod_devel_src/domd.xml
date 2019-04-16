@@ -4,5 +4,5 @@
 
     <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
     <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="ef1aa566d74a11c4d2ae9592474030a706b4cf39" />
-    <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="b7bce30e7399c46a8e269a7d78190e402dab1583" />
+    <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="596784d1cf5b83eac7a4b3de7b671357553bc1a8" />
 </manifest>
