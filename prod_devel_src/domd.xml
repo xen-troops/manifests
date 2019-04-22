@@ -3,6 +3,6 @@
     <include name="prod_devel/domd.xml"/>
 
     <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
-    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" /i>
+    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
     <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
 </manifest>
