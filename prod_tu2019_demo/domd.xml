@@ -1,38 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl" pushurl="ssh://gerrit.automotivelinux.org:29418" review="https://gerrit.automotivelinux.org/gerrit/"/>
-  <remote fetch="https://github.com/" name="github"/>
-  <remote fetch="git://git.openembedded.org/" name="openembedded"/>
-  <remote fetch="git://code.qt.io/" name="qt.io"/>
-  <remote fetch="git://git.yoctoproject.org/" name="yocto"/>
-  <remote fetch="ssh://git@gitpct.epam.com" name="epam"/>
-  
-  <default remote="agl" revision="refs/tags/flounder/6.0.2" sync-j="4"/>
-  
-  <project name="01org/meta-security-isafw" path="meta-security-isafw" remote="github" revision="489abdc65cefb566d696c8b218aa0b9b99a350ae" upstream="master"/>
-  <project name="AGL/meta-agl" path="meta-agl"/>
-  <project name="AGL/meta-agl-demo" path="meta-agl-demo"/>
-  <project name="AGL/meta-agl-devel" path="meta-agl-devel"/>
-  <project name="AGL/meta-agl-extra" path="meta-agl-extra"/>
-  <project name="AGL/meta-renesas-rcar-gen3" path="meta-renesas-rcar-gen3"/>
-  <project name="CogentEmbedded/meta-rcar" path="meta-rcar" remote="github" revision="a0551596548ef3a4c9132161f3d9c4ae538d6fdc" upstream="v3.7.0"/>
-  <project name="advancedtelematic/meta-updater" path="meta-updater" remote="github" revision="ff555e8690eb47177ade42dc6912ae17a759cc45" upstream="rocko"/>
-  <project name="advancedtelematic/meta-updater-qemux86-64" path="meta-updater-qemux86-64" remote="github" revision="697632ddd98ed7ae3dbd0bd84abb04079767bc56" upstream="rocko"/>
-  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="f96f41b2e5beda2b51acb702d082568898b36a68" upstream="rocko"/>
-  <project name="kraj/meta-altera" path="meta-altera" remote="github" revision="14e08a419cb9d4017f40360c14fcc3c2c1ce8e42" upstream="rocko"/>
-  <project name="meta-freescale" remote="yocto" revision="a4158e3425a79720ddc4c02e76251d567bdceb51" upstream="rocko"/>
-  <project name="meta-gplv2" remote="yocto" revision="f875c60ecd6f30793b80a431a2423c4b98e51548" upstream="rocko"/>
-  <project name="meta-intel" remote="yocto" revision="718bb384942675437c081f6795da7f421da1fee6" upstream="rocko"/>
-  <project name="meta-oic" remote="yocto" revision="6e831e4bcdfa6ab8c26eb4fca4bdc98faf028818" upstream="1.2.1"/>
-  <project name="meta-openembedded" remote="openembedded" revision="eae996301d9c097bcbeb8046f08041dc82bb62f8" upstream="rocko"/>
-  <project name="meta-qcom" remote="yocto" revision="955ce2625de5d8c7fe313bd4630c8a290e4b96f8" upstream="rocko"/>
-  <project name="meta-qt5/meta-qt5" path="meta-qt5" remote="github" revision="682ad61c071a9710e9f9d8a32ab1b5f3c14953d1" upstream="rocko"/>
-  <project name="meta-raspberrypi" remote="yocto" revision="8e4c537d84fdde8e3b4642d0dda2c0f4af76d52f" upstream="rocko"/>
-  <project name="meta-security" remote="yocto" revision="8f6969a775fa6afbf553e72ba83e71197780b2d8" upstream="master"/>
-  <project name="meta-ti" remote="yocto" revision="ed83a43c6a76875ee5f0388b3b60a28f2a373a10" upstream="rocko"/>
-  <project name="meta-virtualization" remote="yocto" revision="bd77388f31929f38e7d4cc9c711f0f83f563007e" upstream="rocko"/>
-  <project name="phongt/meta-sdl" path="meta-sdl" remote="github" revision="60c9fe8a4a9c6ca95f222685f8d6248f16236f2a" upstream="release/4.4.0"/>
-  <project name="poky" remote="yocto" revision="05711ba18587aaaf4a9c465a1dd4537f27ceda93" upstream="rocko"/>
+
+  <!-- remote servers to query -->
+  <remote name="agl"
+         fetch="https://gerrit.automotivelinux.org/gerrit/"
+         review="https://gerrit.automotivelinux.org/gerrit/"
+         pushurl="ssh://gerrit.automotivelinux.org:29418"
+  />
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
+  <remote name="github" fetch="https://github.com/" />
+
+  <!-- defaults -->
+  <default remote="agl" sync-j="4" revision="master"/>
+
+
+  <!-- CORE -->
+  <!-- use agl revisions/branches here -->
+
+  <!-- AGL things. -->
+  <project name="AGL/meta-agl" path="meta-agl" />
+  <project name="AGL/meta-agl-cluster-demo" path="meta-agl-cluster-demo" />
+  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
+  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
+  <project name="AGL/meta-agl-extra" path="meta-agl-extra" />
+  <project name="AGL/meta-agl-telematics-demo" path="meta-agl-telematics-demo" />
+
+
+  <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
+
+  <!-- YOCTO & OE -->
+
+  <!-- Yocto/OpenEmbedded things. --> 
+  <project name="poky" path="poky" remote="yocto" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" upstream="thud" />
+  <project name="meta-gplv2" path="meta-gplv2" remote="yocto" revision="aabc30f3bd03f97326fb8596910b94639fea7575" upstream="thud" />
+  <project name="openembedded/meta-openembedded" path="meta-openembedded" remote="github" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" upstream="thud" />
+
+
+  <!-- UPSTREAM COMPONENTS -->
+
+  <!-- meta-virtualization -->
+  <project name="meta-virtualization" path="meta-virtualization" remote="yocto" revision="9e8c0c96b443828a255e7d6ca6291598347672ac" upstream="thud"/>
+
+  <!-- Qt things -->
+  <project name="meta-qt5/meta-qt5" path="meta-qt5" remote="github" revision="81937713f774d7dea854b22987b3ef1ab1f1cdbe" upstream="thud"/>
+
+  <!-- Updater layers. -->
+  <project name="advancedtelematic/meta-updater" path="meta-updater" remote="github" revision="2d2e46834af68b1c22ad0a022001c117caa4929c" upstream="thud"/>
+  <project name="advancedtelematic/meta-updater-qemux86-64" path="meta-updater-qemux86-64" remote="github" revision="214e14c4c45625842e542eebd696f903060d488f" upstream="thud"/>
+
+  <!-- Security layer -->
+  <project name="meta-security" path="meta-security" remote="yocto" revision="31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud"/>
+
+  <!-- SmartDeviceLink layer -->
+  <project name="phongt/meta-sdl" path="meta-sdl" remote="github" revision="ab1e345171e799216b8fcb432943a2de5ff66f5f" upstream="thud"/>
+
+  <!-- meta-spdxscanner - support for fossology -->
+  <project name="dl9pf/meta-spdxscanner" path="meta-spdxscanner" remote="github" revision="2dd8b88071268a5922696db36a9ba8be96a9e0ef" upstream="master"/>
+
+
+  <!-- BSPs -->
+
+  <!-- Renesas Gen3 specific things -->
+  <project name="AGL/meta-renesas-rcar-gen3" path="meta-renesas-rcar-gen3" />
+  <project name="CogentEmbedded/meta-rcar" path="meta-rcar" remote="github" revision="5aecbd92ce06c179efa9dca9127c09219018bc4b" upstream="thud-v3.15.0"/>
+
+  <!-- MinnowBoard MAX specific things -->
+  <project name="meta-intel" path="meta-intel" remote="yocto" revision="27dadcfc7bc0de70328b02fecb841608389d22fc" upstream="thud"/>
+
+  <!-- consolidate on meta-freescale from git.yoctoproject.org -->
+  <project name="meta-freescale" path="meta-freescale" remote="yocto" revision="f5c932229c31b612cba38c2ed6f3c3ec6b800e92" upstream="thud"/>
+
+  <!-- Boundary devices bsp layer -->
+  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="4ea73c57f125ff0b8c3e17e5cc5d07b6168bbd6c" upstream="master"/>
+
+  <!-- ti vayu / jacinto 6 / DRA7 -->
+  <project name="meta-ti" path="meta-ti" remote="yocto" revision="9e9db020a8ac0c1f331fde11c9810a02facd638b" upstream="thud"/>
+
+  <!-- rpi 2, 3 and 3 B+ -->
+  <project name="meta-raspberrypi" path="meta-raspberrypi" remote="yocto" revision="c71d79efc5a06a0c896c278c94f5b14413bb4d69" upstream="thud"/>
+
+  <!-- DragonBoard 410c specific things -->
+  <project name="meta-qcom" path="meta-qcom" remote="yocto" revision="8ac86cd465d73da78e24620e4695176138d17fc3" upstream="thud"/>
+
+  <!-- Altera SOCFPGA platform -->
+  <!-- https://github.com/kraj/meta-altera -->
+  <project name="kraj/meta-altera" path="meta-altera" remote="github" revision="f07030bb6ff2062031e06efe9831b76c7250b32e" upstream="thud"/>
+
+  <!-- Sancloud BSP layers -->
+  <project name="SanCloudLtd/meta-sancloud" path="meta-sancloud" remote="github" revision="430d3da4ee36580e5950d94a76edf88eea753ebb" upstream="thud"/>
+  <project name="EmbeddedAndroid/meta-rtlwifi" path="meta-rtlwifi" remote="github" revision="fd7ca0ca47c7095ced62a5a7cdef040dff87fb76" upstream="master"/>
+
+  <!-- meta-synopsys - support for ARC HSDK board -->
+  <project name="foss-for-synopsys-dwc-arc-processors/meta-synopsys" path="meta-synopsys" remote="github" revision="702a0e826e87796aefa97abc1de0217d3775fd13" upstream="thud-agl"/>
+
+  <!-- Xen-troops specific things -->
   <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
   <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
+
 </manifest>
