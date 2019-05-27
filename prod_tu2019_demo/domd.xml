@@ -9,6 +9,7 @@
   />
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
+  <remote fetch="ssh://git@gitpct.epam.com" name="epam"/>
 
   <!-- defaults -->
   <default remote="agl" sync-j="4" revision="master"/>
