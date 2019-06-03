@@ -95,7 +95,7 @@
   <project name="foss-for-synopsys-dwc-arc-processors/meta-synopsys" path="meta-synopsys" remote="github" revision="702a0e826e87796aefa97abc1de0217d3775fd13" upstream="thud-agl"/>
 
   <!-- Xen-troops specific things -->
-  <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
+  <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="thud" revision="thud" />
   <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
 
 </manifest>
