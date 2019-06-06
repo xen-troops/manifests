@@ -14,5 +14,6 @@
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="rocko" revision="75dfb67bbb14a70cd47afda9726e2e1c76731885" />
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="morty" revision="7351dfc00d7a56b8982582ba8e10ffa8940932cb" />
     <project name="kraj/meta-clang" path="meta-clang" upstream="rocko" revision="533f882e77714a231a1cef985fd9bb7f56e44145" />
+    <project name="CogentEmbedded/meta-rcar" path="meta-rcar" revision="395dcd7cf5713672a59c9a3e1b75afaad5e446aa" upstream="v3.15.0" />
 
 </manifest>
