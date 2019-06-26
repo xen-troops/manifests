@@ -9,10 +9,9 @@
   />
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
-  <remote fetch="ssh://git@gitpct.epam.com" name="epam"/>
 
   <!-- defaults -->
-  <default remote="agl" sync-j="4" revision="refs/tags/halibut/7.99.1"/>
+  <default remote="agl" sync-j="4" revision="refs/tags/halibut/8.0.0"/>
 
 
   <!-- CORE -->
@@ -31,71 +30,68 @@
 
   <!-- YOCTO & OE -->
 
-  <!-- Yocto/OpenEmbedded things. --> 
-  <project name="poky" path="poky" remote="yocto" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" upstream="thud" />
-  <project name="meta-gplv2" path="meta-gplv2" remote="yocto" revision="aabc30f3bd03f97326fb8596910b94639fea7575" upstream="thud" />
-  <project name="openembedded/meta-openembedded" path="meta-openembedded" remote="github" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" upstream="thud" />
+  <!-- Yocto/OpenEmbedded things. -->
+  <project name="poky" path="external/poky" remote="yocto" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" upstream="thud" />
+  <project name="meta-gplv2" path="external/meta-gplv2" remote="yocto" revision="aabc30f3bd03f97326fb8596910b94639fea7575" upstream="thud" />
+  <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" upstream="thud" />
 
 
   <!-- UPSTREAM COMPONENTS -->
 
   <!-- meta-virtualization -->
-  <project name="meta-virtualization" path="meta-virtualization" remote="yocto" revision="9e8c0c96b443828a255e7d6ca6291598347672ac" upstream="thud"/>
+  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="9e8c0c96b443828a255e7d6ca6291598347672ac" upstream="thud"/>
 
   <!-- Qt things -->
-  <project name="meta-qt5/meta-qt5" path="meta-qt5" remote="github" revision="81937713f774d7dea854b22987b3ef1ab1f1cdbe" upstream="thud"/>
+  <project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="81937713f774d7dea854b22987b3ef1ab1f1cdbe" upstream="thud"/>
 
   <!-- Updater layers. -->
-  <project name="advancedtelematic/meta-updater" path="meta-updater" remote="github" revision="2d2e46834af68b1c22ad0a022001c117caa4929c" upstream="thud"/>
-  <project name="advancedtelematic/meta-updater-qemux86-64" path="meta-updater-qemux86-64" remote="github" revision="214e14c4c45625842e542eebd696f903060d488f" upstream="thud"/>
+  <project name="advancedtelematic/meta-updater" path="external/meta-updater" remote="github" revision="2d2e46834af68b1c22ad0a022001c117caa4929c" upstream="thud"/>
+  <project name="advancedtelematic/meta-updater-qemux86-64" path="external/meta-updater-qemux86-64" remote="github" revision="214e14c4c45625842e542eebd696f903060d488f" upstream="thud"/>
 
   <!-- Security layer -->
-  <project name="meta-security" path="meta-security" remote="yocto" revision="31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud"/>
+  <project name="meta-security" path="external/meta-security" remote="yocto" revision="31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud"/>
 
   <!-- SmartDeviceLink layer -->
-  <project name="phongt/meta-sdl" path="meta-sdl" remote="github" revision="ab1e345171e799216b8fcb432943a2de5ff66f5f" upstream="thud"/>
+  <project name="phongt/meta-sdl" path="external/meta-sdl" remote="github" revision="ab1e345171e799216b8fcb432943a2de5ff66f5f" upstream="thud"/>
 
   <!-- meta-spdxscanner - support for fossology -->
-  <project name="dl9pf/meta-spdxscanner" path="meta-spdxscanner" remote="github" revision="2dd8b88071268a5922696db36a9ba8be96a9e0ef" upstream="master"/>
+  <project name="dl9pf/meta-spdxscanner" path="external/meta-spdxscanner" remote="github" revision="2dd8b88071268a5922696db36a9ba8be96a9e0ef" upstream="master"/>
 
 
   <!-- BSPs -->
 
   <!-- Renesas Gen3 specific things -->
-  <project name="AGL/meta-renesas-rcar-gen3" path="meta-renesas-rcar-gen3" />
-  <project name="CogentEmbedded/meta-rcar" path="meta-rcar" remote="github" revision="5aecbd92ce06c179efa9dca9127c09219018bc4b" upstream="thud-v3.15.0"/>
+  <project name="AGL/meta-renesas-rcar-gen3" path="bsp/meta-renesas-rcar-gen3" />
+  <project name="CogentEmbedded/meta-rcar" path="bsp/meta-rcar" remote="github" revision="5aecbd92ce06c179efa9dca9127c09219018bc4b" upstream="thud-v3.15.0"/>
 
   <!-- MinnowBoard MAX specific things -->
-  <project name="meta-intel" path="meta-intel" remote="yocto" revision="27dadcfc7bc0de70328b02fecb841608389d22fc" upstream="thud"/>
+  <project name="meta-intel" path="bsp/meta-intel" remote="yocto" revision="27dadcfc7bc0de70328b02fecb841608389d22fc" upstream="thud"/>
 
   <!-- consolidate on meta-freescale from git.yoctoproject.org -->
-  <project name="meta-freescale" path="meta-freescale" remote="yocto" revision="f5c932229c31b612cba38c2ed6f3c3ec6b800e92" upstream="thud"/>
+  <project name="meta-freescale" path="bsp/meta-freescale" remote="yocto" revision="f5c932229c31b612cba38c2ed6f3c3ec6b800e92" upstream="thud"/>
+  <project name="Freescale/meta-freescale-3rdparty" path="bsp/meta-freescale-3rdparty" remote="github" revision="c4b5ac6b20e4245ce0630e9197313aaef999a331" upstream="thud"/>
 
   <!-- Boundary devices bsp layer -->
-  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="4ea73c57f125ff0b8c3e17e5cc5d07b6168bbd6c" upstream="master"/>
+  <project name="boundarydevices/meta-boundary" path="bsp/meta-boundary" remote="github" revision="4ea73c57f125ff0b8c3e17e5cc5d07b6168bbd6c" upstream="master"/>
 
   <!-- ti vayu / jacinto 6 / DRA7 -->
-  <project name="meta-ti" path="meta-ti" remote="yocto" revision="9e9db020a8ac0c1f331fde11c9810a02facd638b" upstream="thud"/>
+  <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="2da08ed8b2f4a29fb7d45e769171ea5bb79cf0b2" upstream="thud"/>
 
   <!-- rpi 2, 3 and 3 B+ -->
-  <project name="meta-raspberrypi" path="meta-raspberrypi" remote="yocto" revision="c71d79efc5a06a0c896c278c94f5b14413bb4d69" upstream="thud"/>
+  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="c71d79efc5a06a0c896c278c94f5b14413bb4d69" upstream="thud"/>
 
   <!-- DragonBoard 410c specific things -->
-  <project name="meta-qcom" path="meta-qcom" remote="yocto" revision="8ac86cd465d73da78e24620e4695176138d17fc3" upstream="thud"/>
+  <project name="meta-qcom" path="bsp/meta-qcom" remote="yocto" revision="8ac86cd465d73da78e24620e4695176138d17fc3" upstream="thud"/>
 
   <!-- Altera SOCFPGA platform -->
   <!-- https://github.com/kraj/meta-altera -->
-  <project name="kraj/meta-altera" path="meta-altera" remote="github" revision="f07030bb6ff2062031e06efe9831b76c7250b32e" upstream="thud"/>
+  <project name="kraj/meta-altera" path="bsp/meta-altera" remote="github" revision="f07030bb6ff2062031e06efe9831b76c7250b32e" upstream="thud"/>
 
   <!-- Sancloud BSP layers -->
-  <project name="SanCloudLtd/meta-sancloud" path="meta-sancloud" remote="github" revision="430d3da4ee36580e5950d94a76edf88eea753ebb" upstream="thud"/>
-  <project name="EmbeddedAndroid/meta-rtlwifi" path="meta-rtlwifi" remote="github" revision="fd7ca0ca47c7095ced62a5a7cdef040dff87fb76" upstream="master"/>
+  <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="9b837baf403ab7c38de2e05e8c3183e1ab54cfd3" upstream="thud"/>
+  <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="fd7ca0ca47c7095ced62a5a7cdef040dff87fb76" upstream="master"/>
 
   <!-- meta-synopsys - support for ARC HSDK board -->
-  <project name="foss-for-synopsys-dwc-arc-processors/meta-synopsys" path="meta-synopsys" remote="github" revision="702a0e826e87796aefa97abc1de0217d3775fd13" upstream="thud-agl"/>
-
-  <!-- Xen-troops specific things -->
-  <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="thud" revision="thud" />
-  <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
+  <project name="foss-for-synopsys-dwc-arc-processors/meta-synopsys" path="bsp/meta-synopsys" remote="github" revision="702a0e826e87796aefa97abc1de0217d3775fd13" upstream="thud-agl"/>
 
 </manifest>
