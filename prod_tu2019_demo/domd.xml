@@ -9,6 +9,7 @@
   />
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
+  <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
 
   <!-- defaults -->
   <default remote="agl" sync-j="4" revision="refs/tags/halibut/8.0.0"/>
@@ -93,5 +94,10 @@
 
   <!-- meta-synopsys - support for ARC HSDK board -->
   <project name="foss-for-synopsys-dwc-arc-processors/meta-synopsys" path="bsp/meta-synopsys" remote="github" revision="702a0e826e87796aefa97abc1de0217d3775fd13" upstream="thud-agl"/>
+
+   <!-- Xen-troops specific things -->
+  <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
+  <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
+  <project remote="github" name="iartemenko/meta-xt-agl-base" path="meta-xt-agl-base" upstream="master" revision="master" />
 
 </manifest>
