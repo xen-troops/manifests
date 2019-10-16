@@ -98,6 +98,6 @@
    <!-- Xen-troops specific things -->
   <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
   <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
-  <project remote="github" name="iartemenko/meta-xt-agl-base" path="meta-xt-agl-base" upstream="master" revision="master" />
+  <project remote="github" name="xen-troops/meta-xt-agl-base" path="meta-xt-agl-base" upstream="master" revision="master" />
 
 </manifest>
