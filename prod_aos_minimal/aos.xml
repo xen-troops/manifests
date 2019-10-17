@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="git://github.com" />
+    <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
+    <remote name="openembedded" fetch="git://git.openembedded.org" />
+    <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
+
+    <default remote="github" sync-j="10" sync-c="true" />
+
+    <project remote="yoctoproject" name="poky" path="poky" upstream="thud" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" />
+    <project remote="github" name="xen-troops/meta-aos-minimal" path="meta-aos-minimal" upstream="master" revision="master" />
+    <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
+</manifest>
