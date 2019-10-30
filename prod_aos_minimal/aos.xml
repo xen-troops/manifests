@@ -8,6 +8,7 @@
     <default remote="github" sync-j="10" sync-c="true" />
 
     <project remote="yoctoproject" name="poky" path="poky" upstream="thud" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="thud" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
     <project remote="github" name="xen-troops/meta-aos-minimal" path="meta-aos-minimal" upstream="master" revision="master" />
     <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
 </manifest>
