@@ -7,7 +7,7 @@
     <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
 
     <default remote="github" sync-j="10" sync-c="true" />
-
+    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
     <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="thud-dev" revision="2a535519e1808bb3a43e88a6c5dcc0556fc7101d" />
     <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="thud" revision="9e8c0c96b443828a255e7d6ca6291598347672ac" />
     <project remote="yoctoproject" name="poky" path="poky" upstream="thud" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" />
