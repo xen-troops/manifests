@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="git://github.com" />
+    <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
+    <remote name="openembedded" fetch="git://git.openembedded.org" />
+    <remote name="linaro" fetch="git://git.linaro.org" />
+
+    <default remote="github" sync-j="10" sync-c="true" />
+
+    <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="thud" revision="9e8c0c96b443828a255e7d6ca6291598347672ac" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="thud" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="thud" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
+    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="thud" revision="b30036d4ef7ce9fe746833fc54de6ac7b0e00638" />
+</manifest>
