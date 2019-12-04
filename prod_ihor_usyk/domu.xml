@@ -7,6 +7,7 @@
 
     <default remote="github" sync-j="10" sync-c="true" />
 
+    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
     <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="rocko" revision="8af0b7d6e445b532088a068dc012757001be3a1f" />
     <project remote="yoctoproject" name="poky" path="poky" upstream="rocko" revision="7e7ee662f5dea4d090293045f7498093322802cc" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="rocko" revision="352531015014d1957d6444d114f4451e241c4d23" />
