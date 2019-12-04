@@ -4,7 +4,7 @@
     <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
     <remote name="openembedded" fetch="git://git.openembedded.org" />
     <remote name="linaro" fetch="git://git.linaro.org" />
-
+    <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
     <default remote="github" sync-j="10" sync-c="true" />
 
     <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
