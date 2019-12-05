@@ -7,15 +7,12 @@
     <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
 
     <default remote="github" sync-j="10" sync-c="true" />
-    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="master" />
-    <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="thud-dev" revision="14fe2b63e6c580bd48446317a9430e6f035a5895" />
+
+    <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="thud-dev" revision="2a535519e1808bb3a43e88a6c5dcc0556fc7101d" />
     <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="thud" revision="9e8c0c96b443828a255e7d6ca6291598347672ac" />
     <project remote="yoctoproject" name="poky" path="poky" upstream="thud" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="thud" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
-    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="thud" revision="0a94decea3bd2504590d1637eadff9d502c19ee2" />
+    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="thud" revision="b30036d4ef7ce9fe746833fc54de6ac7b0e00638" />
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="thud" revision="fb6192aa2c5df8e80c5e6d4fa5448d574332f68f" />
     <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="thud" revision="thud" />
-    <project name="kraj/meta-clang" path="meta-clang" upstream="thud" revision="7933fd19fe1df357df0532d3983c10d014e8d5f6" />
-    <project name="CogentEmbedded/meta-rcar" path="meta-rcar" revision="e9bf7907fcf1f3013705de10a37b7561f6660e3c" upstream="thud-v3.21.0" />
 </manifest>
-
