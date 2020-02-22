@@ -5,6 +5,6 @@
 
     <default remote="yoctoproject" sync-j="10" sync-c="true" />
 
-    <project remote="yoctoproject" name="poky" path="poky" upstream="pyro" revision="773e56f0e55760bea9cb79390441145f7953d1a7" />
-    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="pyro" revision="9eaebc6e783f1394bb5444326cd05a976b3122e9" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="dunfell" revision="80d619e771a6669ed181bc2d03fb54422a57ac76" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="dunfell" revision="389757a7494221fea1d8437e9a01c6e4fb4700af" />
 </manifest>
