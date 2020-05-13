@@ -14,5 +14,5 @@
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="thud" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="thud" revision="b30036d4ef7ce9fe746833fc54de6ac7b0e00638" />
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="thud" revision="fb6192aa2c5df8e80c5e6d4fa5448d574332f68f" />
-    <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="thud" revision="thud" />
+    <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="thud" revision="362ffce00ac19f68dd985d7e145b8c815bcd6991" />
 </manifest>
