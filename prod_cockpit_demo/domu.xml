@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="git://github.com" />
+    <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
+    <remote name="openembedded" fetch="git://git.openembedded.org" />
+    <remote name="linaro" fetch="git://git.linaro.org" />
+
+    <default remote="github" sync-j="10" sync-c="true" />
+
+    <project name="renesas-rcar/meta-renesas" path="meta-renesas" upstream="thud-dev" revision="14fe2b63e6c580bd48446317a9430e6f035a5895" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="thud" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="thud" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
+    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="thud" revision="0a94decea3bd2504590d1637eadff9d502c19ee2" />
+    <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="thud" revision="fb6192aa2c5df8e80c5e6d4fa5448d574332f68f" />
+    <project name="kraj/meta-clang" path="meta-clang" upstream="thud" revision="7933fd19fe1df357df0532d3983c10d014e8d5f6" />
+</manifest>

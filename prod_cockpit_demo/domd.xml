@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- remote servers to query -->
+  <remote name="agl"
+         fetch="https://gerrit.automotivelinux.org/gerrit/"
+         review="https://gerrit.automotivelinux.org/gerrit/"
+         pushurl="ssh://gerrit.automotivelinux.org:29418"
+  />
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
+  <remote name="github" fetch="https://github.com/" />
+  <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
+
+  <!-- defaults -->
+  <default remote="agl" sync-j="4" revision="refs/tags/icefish/9.0.2"/>
+
+
+  <!-- CORE -->
+  <!-- use agl revisions/branches here -->
+
+  <!-- AGL things. -->
+  <project name="AGL/meta-agl" path="meta-agl" />
+  <project name="AGL/meta-agl-cluster-demo" path="meta-agl-cluster-demo" />
+  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
+  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
+  <project name="AGL/meta-agl-extra" path="meta-agl-extra" />
+  <project name="AGL/meta-agl-telematics-demo" path="meta-agl-telematics-demo" />
+
+
+  <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
+
+  <!-- YOCTO & OE -->
+
+  <!-- Yocto/OpenEmbedded things. -->
+  <project name="poky" path="external/poky" remote="yocto" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" upstream="thud" />
+  <project name="meta-gplv2" path="external/meta-gplv2" remote="yocto" revision="aabc30f3bd03f97326fb8596910b94639fea7575" upstream="thud" />
+  <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" upstream="thud" />
+
+
+  <!-- UPSTREAM COMPONENTS -->
+
+  <!-- meta-virtualization -->
+  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="9e8c0c96b443828a255e7d6ca6291598347672ac" upstream="thud"/>
+
+  <!-- Qt things -->
+  <project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="e6e464c9ed9266ce46452f953c1bdcb0e7b2d95f" upstream="thud"/>
+
+  <!-- Updater layers. -->
+  <project name="advancedtelematic/meta-updater" path="external/meta-updater" remote="github" revision="24a560c4285d5d5cf1ce771abe79ce718855d9f3" upstream="thud"/>
+  <project name="advancedtelematic/meta-updater-qemux86-64" path="external/meta-updater-qemux86-64" remote="github" revision="ede8396667508eaeb18db4a6e8544f5d1280e0df" upstream="thud"/>
+  <project name="advancedtelematic/meta-updater-raspberrypi" path="external/meta-updater-raspberrypi" remote="github" revision="16e5f35e790f75a499b4e5526ee4bcb0bf695163" upstream="thud"/>
+
+  <!-- Security layer -->
+  <project name="meta-security" path="external/meta-security" remote="yocto" revision="31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud"/>
+
+
+  <!-- SmartDeviceLink layer -->
+  <project name="phongt/meta-sdl" path="external/meta-sdl" remote="github" revision="ab1e345171e799216b8fcb432943a2de5ff66f5f" upstream="thud"/>
+
+  <!-- meta-spdxscanner - support for fossology -->
+  <project name="meta-spdxscanner" path="external/meta-spdxscanner" remote="yocto" revision="c731a5f1cc83d9d8a1e120207746c89059d5576f" upstream="master"/>
+
+  <!-- clang support -->
+  <project name="kraj/meta-clang" path="meta-clang" upstream="thud" remote="github" revision="7933fd19fe1df357df0532d3983c10d014e8d5f6" />
+
+  <!-- BSPs -->
+
+  <!-- Renesas Gen3 specific things -->
+  <project name="renesas-rcar/meta-renesas" path="bsp/meta-renesas-rcar-gen3" upstream="thud-dev" remote="github" revision="14fe2b63e6c580bd48446317a9430e6f035a5895" />
+  <project name="CogentEmbedded/meta-rcar" path="bsp/meta-rcar" remote="github" revision="e9bf7907fcf1f3013705de10a37b7561f6660e3c" upstream="thud-v3.21.0" />
+
+  <!-- MinnowBoard MAX specific things -->
+  <project name="meta-intel" path="bsp/meta-intel" remote="yocto" revision="a930f946b915624dcc02358725d235b3224fb61b" upstream="thud"/>
+
+  <!-- consolidate on meta-freescale from git.yoctoproject.org -->
+  <project name="meta-freescale" path="bsp/meta-freescale" remote="yocto" revision="07d4a6baa23ec3a1f013f8a070130598b56aec7c" upstream="thud"/>
+  <project name="Freescale/meta-freescale-3rdparty" path="bsp/meta-freescale-3rdparty" remote="github" revision="545e8094a140231e78b9284c3a3d94fcc573ae98" upstream="thud"/>
+
+  <!-- Boundary devices bsp layer --> <!-- latest with thud support -->
+  <project name="boundarydevices/meta-boundary" path="bsp/meta-boundary" remote="github" revision="1b22f4a1217f0f5ad556028752c030cd2f647b4d" upstream="master"/>
+
+  <!-- ti vayu / jacinto 6 / DRA7 -->
+  <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="b27317ab4f9be931a66344ca502c7e3f4ec780e5" upstream="thud"/>
+
+  <!-- rpi 2, 3 and 3 B+ -->
+  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="4e5be97d75668804694412f9b86e9291edb38b9d" upstream="thud"/>
+
+  <!-- DragonBoard 410c specific things -->
+  <project name="meta-qcom" path="bsp/meta-qcom" remote="yocto" revision="d0a58e836444a7118acfc5a99d8cacaa5ae09f5c" upstream="thud"/>
+
+  <!-- Altera SOCFPGA platform -->
+  <!-- https://github.com/kraj/meta-altera -->
+  <project name="kraj/meta-altera" path="bsp/meta-altera" remote="github" revision="da4205c81a35c441ec644d60f1012b6ee273a62c" upstream="thud"/>
+
+  <!-- Sancloud BSP layers -->
+  <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="6125944cd1dba03340c54b803ede2174d90c8f15" upstream="thud"/>
+  <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="91dd94630dad98389bfe4e15207e771754bde75c" upstream="master"/>
+
+  <!-- meta-synopsys - support for ARC HSDK board -->
+  <project name="foss-for-synopsys-dwc-arc-processors/meta-synopsys" path="bsp/meta-synopsys" remote="github" revision="c4fb64eba16782524448c8287656b907633fd0ed" upstream="halibut-agl"/>
+
+   <!-- Xen-troops specific things-->
+  <project remote="github" name="xen-troops/meta-xt-agl-base" path="meta-xt-agl-base" upstream="master" revision="master" />
+
+</manifest>

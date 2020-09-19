@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <include name="prod_cockpit_demo/domd.xml"/>
+
+    <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
+    <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="ef1aa566d74a11c4d2ae9592474030a706b4cf39" />
+    <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="4aec16358c32de980e29e2a4fc0b7cf1f114d858" />
+</manifest>
