@@ -5,6 +5,6 @@
 
     <default remote="github" sync-j="10" sync-c="true" />
 
-    <project name="xen-troops/meta-litmusrt" path="meta-litmusrt" upstream="master" revision="master" />
-    <project remote="yoctoproject" name="poky" path="poky" upstream="pyro" revision="pyro" />
+    <project name="xen-troops/meta-litmusrt" path="meta-litmusrt" upstream="master" revision="1cb4915be697c742f5d1114f8692838c392ccbc9" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="pyro" revision="69d985c0c3c6576f6d408a0930dfdc61dee3d79d" />
 </manifest>
