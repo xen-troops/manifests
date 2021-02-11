@@ -7,9 +7,9 @@
 
     <default remote="github" sync-j="10" sync-c="true" />
 
-    <project remote="yoctoproject" name="poky" path="poky" upstream="dunfell" revision="5e44568d90cb9148253098f60a6aeb32c0e5cf5f" />
-    <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="dunfell" revision="e319e746bffc4360229b2c926b8c5c9492ee52a7" />
-    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="dunfell" revision="17fd382f3467e20308924499b7531ae8b789f056" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="dunfell" revision="6e89d668246fb37b2217aae7ae57390e793696d8" />
+    <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="dunfell" revision="92cd3467502bd27b98a76862ca6525ce425a8479" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="dunfell" revision="de37512b25c1f8c6bb6ab2b3782ac0fe01443483" />
     <project remote="github" name="xen-troops/meta-aos-minimal" path="meta-aos-minimal" upstream="master" revision="master" />
     <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
 </manifest>
