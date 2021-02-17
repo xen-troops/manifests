@@ -8,8 +8,8 @@
 
     <default remote="github" sync-j="10" sync-c="true" />
 
-    <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="dunfell" revision="ff997b6b3ba800978546098ab3cdaa113b6695e1" />
-    <project remote="yoctoproject" name="poky" path="poky" upstream="dunfell" revision="4b6faa9dada8d0ae7aba3a161429e4c1eab2fe21" />
-    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="dunfell" revision="654ad8bea49f142d20b2b96c0dd44810a6be233a" />
+    <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="dunfell" revision="92cd3467502bd27b98a76862ca6525ce425a8479" />
+    <project remote="yoctoproject" name="poky" path="poky" upstream="dunfell" revision="dc38d5e494e53a7a03d5bd8d2429d0ef54cfbbbc" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="dunfell" revision="de37512b25c1f8c6bb6ab2b3782ac0fe01443483" />
     <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
 </manifest>
