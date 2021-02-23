@@ -14,6 +14,7 @@
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="dunfell" revision="7af62c91d7d00a260cf28e7908955539304d100d" />
 
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" revision="f2d02cb71eaff8eb285a1997b30be52486c160ae" />
+    <project remote="openembedded" name="meta-python2" path="meta-python2" upstream="dunfell" revision="c96cfe30701ba191903c5f7d560c3ba667d46c9d" />
 
     <project name="kraj/meta-clang" path="meta-clang" upstream="dunfell" revision="e63d6f9abba5348e2183089d6ef5ea384d7ae8d8" />
 </manifest>
