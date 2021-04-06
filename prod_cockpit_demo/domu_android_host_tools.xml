@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
+    <remote name="openembedded" fetch="git://git.openembedded.org" />
+
+    <default remote="yoctoproject" sync-j="10" sync-c="true" />
+
+    <project remote="yoctoproject" name="poky" path="poky" upstream="pyro" revision="773e56f0e55760bea9cb79390441145f7953d1a7" />
+    <project remote="yoctoproject" name="meta-java" path="meta-java" upstream="pyro" revision="0c27b120aa508e4bb41394b8dd3645949a611128" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="pyro" revision="9eaebc6e783f1394bb5444326cd05a976b3122e9" />
+</manifest>
