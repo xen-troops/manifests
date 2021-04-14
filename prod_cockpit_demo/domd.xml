@@ -12,7 +12,7 @@
   <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
 
   <!-- defaults -->
-  <default remote="agl" sync-j="4" revision="refs/tags/icefish/9.0.2"/>
+  <default remote="agl" sync-j="4" revision="refs/tags/koi/11.0.1"/>
 
 
   <!-- CORE -->
