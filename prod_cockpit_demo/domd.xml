@@ -10,6 +10,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
   <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
+  <remote name="openembedded" fetch="git://git.openembedded.org" />
 
   <!-- defaults -->
   <default remote="agl" sync-j="4" /> 
@@ -36,6 +37,7 @@
   <project name="poky" path="external/poky" remote="yocto" revision="424296bf9bb4bae27febf91bce0118df09ce5fa1" />
   <project name="meta-gplv2" path="external/meta-gplv2" remote="yocto" revision="dunfell" upstream="dunfell" />
   <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="f2d02cb71eaff8eb285a1997b30be52486c160ae" />
+  <project name="meta-python2" path="external/meta-python2" remote="openembedded" upstream="dunfell" revision="6b3000729ce3424c2aa8a03cd46ef37b200d2fc1" />
 
 
   <!-- UPSTREAM COMPONENTS -->
