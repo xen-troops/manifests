@@ -15,4 +15,5 @@
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="thud" revision="b30036d4ef7ce9fe746833fc54de6ac7b0e00638" />
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="thud" revision="fb6192aa2c5df8e80c5e6d4fa5448d574332f68f" />
     <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="master" />
+    <project remote="github" name="CETIBOX-Base/meta-cetibox_x3" path="meta-cetibox_x3" upstream="develop" revision="6093417b5786b7d66f155c7c91d495d28db91a9c" />
 </manifest>
