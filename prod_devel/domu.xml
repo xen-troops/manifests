@@ -6,7 +6,7 @@
 
     <default remote="github" sync-j="10" sync-c="true" />
 
-    <project name="renesas-rcar/meta-renesas" path="meta-renesas" revision="c0a59569d52e32c26de083597308e7bc189675dd" />
+    <project name="renesas-rcar/meta-renesas" path="meta-renesas" revision="fd8ab2bb1b5ca98483c6f4aecf09a85c4d6bc016" />
 
     <project remote="yoctoproject" name="poky" path="poky" revision="424296bf9bb4bae27febf91bce0118df09ce5fa1" />
     <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="dunfell" revision="92cd3467502bd27b98a76862ca6525ce425a8479" />
