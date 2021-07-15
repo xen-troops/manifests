@@ -7,8 +7,9 @@
 
     <default remote="github" sync-j="10" sync-c="true" />
 
-    <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="thud" revision="9e8c0c96b443828a255e7d6ca6291598347672ac" />
-    <project remote="yoctoproject" name="poky" path="poky" upstream="thud" revision="e7f0177ef3b6e06b8bc1722fca0241fef08a1530" />
-    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="thud" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
-    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="thud" revision="b30036d4ef7ce9fe746833fc54de6ac7b0e00638" />
+    <project remote="yoctoproject" name="meta-virtualization" path="meta-virtualization" upstream="dunfell" revision="92cd3467502bd27b98a76862ca6525ce425a8479" />
+    <project remote="yoctoproject" name="poky" path="poky" revision="424296bf9bb4bae27febf91bce0118df09ce5fa1" />
+    <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" revision="f2d02cb71eaff8eb285a1997b30be52486c160ae" />
+    <project remote="yoctoproject" name="meta-arm" path="meta-arm" upstream="dunfell" revision="f7c5e7d5094f65d105d9d580ba59527c25fb0d0f" />
+    <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="dunfell" revision="10af9133aeb28b3487fd227c900c11b786505699" />
 </manifest>
