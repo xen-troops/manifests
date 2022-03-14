@@ -4,7 +4,6 @@
     <remote name="yoctoproject" fetch="git://git.yoctoproject.org" />
     <remote name="openembedded" fetch="git://git.openembedded.org" />
     <remote name="linaro" fetch="git://git.linaro.org" />
-    <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
 
     <default remote="github" sync-j="10" sync-c="true" />
 
@@ -14,5 +13,5 @@
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="thud" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="thud" revision="b30036d4ef7ce9fe746833fc54de6ac7b0e00638" />
     <project remote="yoctoproject" name="meta-selinux" path="meta-selinux" upstream="thud" revision="fb6192aa2c5df8e80c5e6d4fa5448d574332f68f" />
-    <project remote="epam" name="epmd-aepr/meta-aos" path="meta-aos" upstream="master" revision="refs/tags/v5.0.2" />
+    <project remote="github" name="aoscloud/meta-aos" path="meta-aos" upstream="master" revision="refs/tags/v5.2.0" />
 </manifest>
