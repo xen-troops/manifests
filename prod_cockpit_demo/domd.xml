@@ -61,7 +61,7 @@
   <project name="meta-spdxscanner" path="external/meta-spdxscanner" remote="yocto" revision="c731a5f1cc83d9d8a1e120207746c89059d5576f" upstream="master"/>
 
   <!-- clang support -->
-  <project name="kraj/meta-clang" path="meta-clang" upstream="thud" remote="github" revision="7933fd19fe1df357df0532d3983c10d014e8d5f6" />
+   <project name="kraj/meta-clang" path="meta-clang" upstream="thud" remote="github" revision="22f0b0eaad454279c604a83dba53be6e6efb1a06" />
 
   <!-- BSPs -->
 
