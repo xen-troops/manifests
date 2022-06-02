@@ -11,5 +11,4 @@
     <project remote="yoctoproject" name="poky" path="poky" upstream="dunfell" revision="795339092f87672e4f68e4d3bc4cfd0e252d1831" />
     <project remote="linaro" name="openembedded/meta-linaro" path="meta-linaro" upstream="dunfell" revision="10af9133aeb28b3487fd227c900c11b786505699" />
     <project remote="openembedded" name="meta-openembedded" path="meta-openembedded" upstream="dunfell" revision="69f94af4d91215e7d4e225bab54bf3bcfee42f1c" />
-    <project remote="github" name="aoscloud/meta-aos" path="meta-aos" upstream="main" revision="refs/tags/v5.2.0" />
 </manifest>
