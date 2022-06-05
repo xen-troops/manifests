@@ -4,5 +4,4 @@
 
     <remote name="epam" fetch="ssh://git@gitpct.epam.com" />
     <project remote="epam" name="epmd-aepr/img-proprietary" path="proprietary" upstream="master" revision="ef1aa566d74a11c4d2ae9592474030a706b4cf39" />
-    <project remote="github" name="aoscloud/meta-aos" path="meta-aos" upstream="main" revision="4b0f4ea629db039af8cec8f9ea019bb4c9e6d0c7" />
 </manifest>
