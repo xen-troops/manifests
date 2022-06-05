@@ -101,5 +101,6 @@
 
    <!-- Xen-troops specific things-->
   <project remote="github" name="xen-troops/meta-xt-agl-base" path="meta-xt-agl-base" upstream="master" revision="master" />
+  <project remote="github" name="aoscloud/meta-aos" path="meta-aos" upstream="main" revision="4b0f4ea629db039af8cec8f9ea019bb4c9e6d0c7" />
 
 </manifest>
